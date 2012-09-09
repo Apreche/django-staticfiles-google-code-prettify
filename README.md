@@ -21,14 +21,13 @@ You can use this in two different ways in your templates.
 
 STATIC_URL
 ~~~~~~~~~~
-::
 
     <link href="{{ STATIC_URL }}google-code-prettify/css/prettify.css" type="text/css" rel="stylesheet" />
     <script type="text/javascript" src="{{ STATIC_URL }}google-code-prettify/js/prettify.js"></script>
 
 static template tag
 ~~~~~~~~~~~~~~~~~~~
-::
+
     {% load static from staticfiles %}
     <link href="{% static "google-code-prettify/css/prettify.css" %}" type="text/css" rel="stylesheet" />
     <script type="text/javascript" src="{% static "google-code-prettify/js/prettify.js" %}"></script>
